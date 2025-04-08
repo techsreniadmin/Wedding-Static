@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AC Dome Venue Details - WeddingBliss Mumbai</title>
+  <meta name="description" content="Explore details of our luxurious air-conditioned dome wedding venues in Mumbai">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <span class="text-gold">Wedding</span>Bliss
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" 
+              aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="grounds.html">Grounds</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="ac-dome.html">AC Dome</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <h1 class="display-4 text-white fw-bold" id="venueName">AC Dome Venue</h1>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="ac-dome.html">AC Dome</a></li>
+          <li class="breadcrumb-item active" aria-current="page" id="venueNameBreadcrumb">Venue Details</li>
+        </ol>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Venue Details Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 mb-4 mb-lg-0">
+          <div id="venueCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner rounded shadow" id="venueCarouselInner">
+              <!-- Carousel items will be dynamically added via JavaScript -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#venueCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#venueCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <h2 class="section-heading mb-4" id="venueTitle">AC Dome Venue</h2>
+          
+          <div class="venue-info mb-4">
+            <div class="d-flex align-items-center mb-3">
+              <i class="fas fa-users text-gold me-3 fa-fw"></i>
+              <div>
+                <small class="text-muted d-block">Capacity</small>
+                <span id="venueCapacity">600 people</span>
+              </div>
+            </div>
+            
+            <div class="d-flex align-items-center mb-3">
+              <i class="fas fa-palette text-gold me-3 fa-fw"></i>
+              <div>
+                <small class="text-muted d-block">Theme</small>
+                <span id="venueTheme">Modern Luxury</span>
+              </div>
+            </div>
+            
+            <div class="d-flex align-items-center mb-3">
+              <i class="fas fa-map-marker-alt text-gold me-3 fa-fw"></i>
+              <div>
+                <small class="text-muted d-block">Location</small>
+                <span id="venueLocation">Malad, Mumbai</span>
+              </div>
+            </div>
+            
+            <div class="d-flex align-items-center">
+              <i class="fas fa-ruler-combined text-gold me-3 fa-fw"></i>
+              <div>
+                <small class="text-muted d-block">Area</small>
+                <span id="venueArea">30,000 sq. ft.</span>
+              </div>
+            </div>
+          </div>
+          
+          <p class="mb-4" id="venueDescription">Description will be loaded here.</p>
+          
+          <div class="d-flex flex-column flex-sm-row gap-3">
+            <a href="#gallery" class="btn btn-gold">
+              See Photos <i class="fas fa-images ms-2"></i>
+            </a>
+            <a href="contact.html" class="btn btn-outline-maroon">
+              Book This Venue <i class="fas fa-arrow-right ms-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-heading text-center mb-5">Venue Features</h2>
+      <div class="row g-4" id="venueFeatures">
+        <!-- Features will be dynamically added via JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="py-5">
+    <div class="container">
+      <h2 class="section-heading text-center mb-5">Photo Gallery</h2>
+      <div class="row g-4" id="venueGallery">
+        <!-- Gallery images will be dynamically added via JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Enquiry Form Section -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="card shadow border-top border-gold border-4">
+            <div class="card-body p-4">
+              <h3 class="text-center text-maroon fw-bold mb-4">Enquire About This Venue</h3>
+              <form id="venueEnquiryForm">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name *</label>
+                  <input type="text" class="form-control" id="name" placeholder="Your full name" required>
+                </div>
+                <div class="mb-3">
+                  <label for="phone" class="form-label">Phone *</label>
+                  <input type="tel" class="form-control" id="phone" placeholder="Your phone number" required>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email *</label>
+                  <input type="email" class="form-control" id="email" placeholder="Your email address" required>
+                </div>
+                <div class="mb-3">
+                  <label for="eventDate" class="form-label">Preferred Date</label>
+                  <input type="date" class="form-control" id="eventDate">
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message *</label>
+                  <textarea class="form-control" id="message" rows="4" placeholder="Tell us about your event requirements" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-gold w-100 py-2" id="submitBtn">Send Enquiry</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-maroon text-white pt-5 pb-3">
+    <div class="container">
+      <div class="row">
+        <!-- About Column -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h3 class="h5 text-gold mb-3">WeddingBliss</h3>
+          <p class="text-cream">Creating unforgettable wedding experiences with elegant venues that capture the magic of your special day.</p>
+          <div class="d-flex gap-3">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="text-cream hover-gold">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="text-cream hover-gold">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="text-cream hover-gold">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Quick Links Column -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h3 class="h5 text-gold mb-3">Quick Links</h3>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="index.html" class="footer-link">Home</a></li>
+            <li class="mb-2"><a href="about.html" class="footer-link">About</a></li>
+            <li class="mb-2"><a href="grounds.html" class="footer-link">Ground Venues</a></li>
+            <li class="mb-2"><a href="ac-dome.html" class="footer-link">AC Dome Venues</a></li>
+            <li class="mb-2"><a href="contact.html" class="footer-link">Contact Us</a></li>
+          </ul>
+        </div>
+        
+        <!-- Venues Column -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h3 class="h5 text-gold mb-3">Our Venues</h3>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="ground-detail.html?id=1" class="footer-link">Ground 1</a></li>
+            <li class="mb-2"><a href="ground-detail.html?id=2" class="footer-link">Ground 2</a></li>
+            <li class="mb-2"><a href="ground-detail.html?id=3" class="footer-link">Ground 3</a></li>
+            <li class="mb-2"><a href="ac-dome-detail.html?id=1" class="footer-link">AC Dome 1</a></li>
+            <li class="mb-2"><a href="ac-dome-detail.html?id=2" class="footer-link">KCC</a></li>
+          </ul>
+        </div>
+        
+        <!-- Contact Info Column -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h3 class="h5 text-gold mb-3">Contact Us</h3>
+          <ul class="list-unstyled">
+            <li class="d-flex mb-3">
+              <i class="fas fa-map-marker-alt text-gold me-2 mt-1"></i>
+              <span>123 Wedding Lane, Mumbai, Maharashtra 400001, India</span>
+            </li>
+            <li class="d-flex mb-3">
+              <i class="fas fa-phone text-gold me-2 mt-1"></i>
+              <span>+91 9876543210</span>
+            </li>
+            <li class="d-flex mb-3">
+              <i class="fas fa-envelope text-gold me-2 mt-1"></i>
+              <span>info@weddingbliss.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="border-top border-gold-30 mt-4 pt-3 text-center text-cream">
+        <p>&copy; <span id="currentYear"></span> WeddingBliss Mumbai. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+  <script src="js/venue-data.js"></script>
+  <script src="js/acdome-detail.js"></script>
+  <script src="js/form.js"></script>
+</body>
+</html>
