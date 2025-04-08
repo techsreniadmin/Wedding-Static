@@ -1,0 +1,563 @@
+
+/* 
+=================================
+  Custom Styles - WeddingBliss
+=================================
+*/
+
+/* 
+* Base Styles
+*/
+:root {
+  --wedding-maroon: #8B0D32;
+  --wedding-gold: #D4AF37;
+  --wedding-cream: #FFF8E7;
+  --wedding-light: #FAF9F6;
+  --font-playfair: 'Playfair Display', serif;
+  --font-poppins: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: var(--font-poppins);
+  color: #333;
+  overflow-x: hidden;
+  background-color: var(--wedding-light);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-playfair);
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Pattern background */
+.pattern-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23D4AF37' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  z-index: -1;
+}
+
+/* 
+* Color Utilities
+*/
+.text-maroon {
+  color: var(--wedding-maroon) !important;
+}
+
+.text-gold {
+  color: var(--wedding-gold) !important;
+}
+
+.text-cream {
+  color: var(--wedding-cream) !important;
+}
+
+.bg-maroon {
+  background-color: var(--wedding-maroon) !important;
+}
+
+.bg-gold {
+  background-color: var(--wedding-gold) !important;
+}
+
+.bg-cream {
+  background-color: var(--wedding-cream) !important;
+}
+
+.bg-maroon-light {
+  background-color: rgba(139, 13, 50, 0.05) !important;
+}
+
+.bg-gold-light {
+  background-color: rgba(212, 175, 55, 0.2) !important;
+}
+
+.border-gold {
+  border-color: var(--wedding-gold) !important;
+}
+
+.border-maroon {
+  border-color: var(--wedding-maroon) !important;
+}
+
+.border-gold-30 {
+  border-color: rgba(212, 175, 55, 0.3) !important;
+}
+
+/*
+* Navigation
+*/
+#mainNav {
+  transition: all 0.5s ease;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#mainNav.scrolled {
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.navbar-brand {
+  font-family: var(--font-playfair);
+  font-weight: 700;
+  color: var(--wedding-maroon);
+  font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+  color: var(--wedding-maroon);
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  position: relative;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: var(--wedding-gold);
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: var(--wedding-gold);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+  width: 80%;
+}
+
+.navbar-toggler {
+  border: none;
+  color: var(--wedding-maroon);
+}
+
+/*
+* Hero Section
+*/
+.hero-section {
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-image {
+  position: relative;
+}
+
+.experience-badge {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  text-align: center;
+  width: 120px;
+}
+
+.badge.bg-gold {
+  background-color: var(--wedding-gold);
+}
+
+.bg-decoration {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.top-left {
+  top: -30px;
+  left: -30px;
+}
+
+.bottom-right {
+  bottom: -30px;
+  right: -30px;
+}
+
+/*
+* Buttons
+*/
+.btn-gold {
+  background-color: var(--wedding-gold);
+  color: white;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-gold:hover {
+  background-color: var(--wedding-maroon);
+  color: white;
+}
+
+.btn-outline-maroon {
+  border: 2px solid var(--wedding-maroon);
+  color: var(--wedding-maroon);
+  transition: all 0.3s ease;
+}
+
+.btn-outline-maroon:hover {
+  background-color: rgba(139, 13, 50, 0.1);
+  color: var(--wedding-maroon);
+}
+
+/*
+* Section Styles
+*/
+.section-heading {
+  font-weight: 700;
+  color: var(--wedding-maroon);
+  position: relative;
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+
+.section-heading::after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 3px;
+  background-color: var(--wedding-gold);
+  bottom: -10px;
+  left: 0;
+}
+
+.text-center .section-heading::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*
+* Venue Cards
+*/
+.venue-card {
+  transition: all 0.3s ease;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.venue-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.venue-card .card-img-top {
+  height: 220px;
+  object-fit: cover;
+  transition: all 0.5s ease;
+}
+
+.venue-card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+.capacity-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: var(--wedding-gold);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+/*
+* Feature Cards
+*/
+.feature-card {
+  padding: 1.5rem;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+  margin-bottom: 1rem;
+  color: var(--wedding-gold);
+}
+
+/*
+* Contact Info Cards
+*/
+.contact-info-card {
+  padding: 2rem;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.contact-info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/*
+* Social Media Links
+*/
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: white;
+  color: var(--wedding-maroon);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background-color: var(--wedding-gold);
+  color: white;
+  transform: translateY(-5px);
+}
+
+/*
+* Footer
+*/
+.footer-link {
+  color: var(--wedding-cream);
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.footer-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--wedding-gold);
+  transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+  color: var(--wedding-gold);
+}
+
+.footer-link:hover::after {
+  width: 100%;
+}
+
+.hover-gold:hover {
+  color: var(--wedding-gold) !important;
+}
+
+/*
+* Page Header
+*/
+.page-header {
+  background: linear-gradient(rgba(139, 13, 50, 0.8), rgba(139, 13, 50, 0.9)), url('https://images.unsplash.com/photo-1519741347686-c1e0aadf4611?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80');
+  background-size: cover;
+  background-position: center;
+  padding: 8rem 0 3rem;
+  position: relative;
+}
+
+.breadcrumb-item a {
+  color: var(--wedding-gold);
+}
+
+.breadcrumb-item.active {
+  color: var(--wedding-cream);
+}
+
+/*
+* CTA Section
+*/
+.cta-section {
+  background: linear-gradient(rgba(139, 13, 50, 0.85), rgba(139, 13, 50, 0.95)), url('https://images.unsplash.com/photo-1519741347686-c1e0aadf4611?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+/*
+* Testimonials
+*/
+.testimonial-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.testimonial-text {
+  font-style: italic;
+  position: relative;
+  padding: 0 20px;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-text::before,
+.testimonial-text::after {
+  content: '"';
+  font-size: 2rem;
+  color: var(--wedding-gold);
+  position: absolute;
+  line-height: 0;
+}
+
+.testimonial-text::before {
+  left: 0;
+  top: 20px;
+}
+
+.testimonial-text::after {
+  right: 0;
+  bottom: 0;
+}
+
+.testimonial-author h5 {
+  color: var(--wedding-maroon);
+  margin-bottom: 5px;
+}
+
+/*
+* Image Modal & Carousel
+*/
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
+}
+
+.img-container {
+  overflow: hidden;
+  text-align: center;
+}
+
+#modalImage {
+  transition: transform 0.3s ease;
+  max-height: 70vh;
+}
+
+/*
+* Venue Details Page
+*/
+.venue-info {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+/* Gallery Grid */
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.gallery-item img {
+  transition: transform 0.5s ease;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Lightbox overrides */
+.lb-data .lb-caption {
+  font-family: var(--font-playfair);
+  font-weight: bold;
+}
+
+/*
+* Media Queries
+*/
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hero-section {
+    padding-top: 6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    text-align: center;
+    padding-top: 5rem;
+  }
+  
+  .section-heading::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .carousel-item img {
+    height: 300px;
+  }
+  
+  .experience-badge {
+    right: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-item img {
+    height: 250px;
+  }
+  
+  .social-link {
+    width: 50px;
+    height: 50px;
+  }
+}
